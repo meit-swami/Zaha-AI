@@ -1,0 +1,34 @@
+# Dependencies (do NOT commit - these are what make the repo ~2GB)
+node_modules/
+**/node_modules/
+
+# Next.js (apps/web)
+.next/
+out/
+
+# Expo / React Native (apps/mobile)
+.expo/
+dist/
+web-build/
+.expo-shared/
+
+# Build outputs
+build/
+*.tsbuildinfo
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel
+
+# IDE and OS
+.DS_Store
+*.log
+*.pem
+
+# Optional: uncomment if you generate native projects and don't want them in Git
+# apps/mobile/ios/
+# apps/mobile/android/

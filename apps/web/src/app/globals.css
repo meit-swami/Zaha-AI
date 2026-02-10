@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-prime: #006D66;
+  --color-prime-light: #26A69A;
+  --color-prime-dark: #004D40;
+  --color-accent: #C5A065;
+  --color-accent-light: #D4AF37;
+  --color-accent-pearl: #FDFBF7;
+  --color-dark: #121212;
+  --color-dark-surface: #1E1E1E;
+
+  --font-family-serif: var(--font-playfair), serif;
+  --font-family-sans: var(--font-inter), sans-serif;
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(197, 160, 101, 0.5);
+}
+
+.mirror-x {
+  transform: scaleX(-1);
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
