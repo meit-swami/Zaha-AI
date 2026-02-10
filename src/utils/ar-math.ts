@@ -66,7 +66,7 @@ export const getBodyMeasurements = (landmarks: LandmarkPoint[]): BodyMeasurement
 
     // Calibrate based on relative shoulder width and distance (Z-depth)
     // A smaller Z means closer to camera.
-    const avgZ = (leftShoulder.z + rightShoulder.z) / 2;
+    const avgZ = ((leftShoulder.z ?? 0) + (rightShoulder.z ?? 0)) / 2;
 
     // Adjusted width: normalize the width based on distance
     // Heuristic: If Z is -0.5 (close), width is naturally larger. 
