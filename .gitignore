@@ -1,34 +1,41 @@
-# Dependencies (do NOT commit - these are what make the repo ~2GB)
-node_modules/
-**/node_modules/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Next.js (apps/web)
-.next/
-out/
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# Expo / React Native (apps/mobile)
-.expo/
-dist/
-web-build/
-.expo-shared/
+# testing
+/coverage
 
-# Build outputs
-build/
-*.tsbuildinfo
+# next.js
+/.next/
+/out/
 
-# Environment and secrets
-.env
-.env.*
-!.env.example
+# production
+/build
 
-# Vercel
-.vercel
-
-# IDE and OS
+# misc
 .DS_Store
-*.log
 *.pem
 
-# Optional: uncomment if you generate native projects and don't want them in Git
-# apps/mobile/ios/
-# apps/mobile/android/
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360">
+  <defs>
+    <linearGradient id="aviatorFrame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#836534"/>
+      <stop offset="100%" stop-color="#4f3a19"/>
+    </linearGradient>
+  </defs>
+  <path d="M110 92 Q90 250 280 250 Q440 248 418 102 Q250 90 110 92 Z" fill="#6d8797" fill-opacity="0.46" stroke="url(#aviatorFrame)" stroke-width="18"/>
+  <path d="M502 102 Q480 248 640 250 Q830 250 810 92 Q670 90 502 102 Z" fill="#6d8797" fill-opacity="0.46" stroke="url(#aviatorFrame)" stroke-width="18"/>
+  <path d="M418 150 Q460 172 502 150" fill="none" stroke="#6f5327" stroke-width="16" stroke-linecap="round"/>
+  <path d="M96 156 C62 150 34 162 8 186" fill="none" stroke="#4f3a19" stroke-width="16" stroke-linecap="round"/>
+  <path d="M824 156 C858 150 886 162 912 186" fill="none" stroke="#4f3a19" stroke-width="16" stroke-linecap="round"/>
+</svg>
